@@ -1,0 +1,66 @@
+<resources>
+    <!-- Global Use -->
+    <string name="app_name">DC Vote</string>
+    <string name="logo_text">DC Satisfaction</string>
+    <string name="span_appType">QR Scanner</string>
+    <string name="company">CPAll</string>
+
+    <!-- Home Screen -->
+    <string name="home_startSurvey">เริ่มประเมิน</string>
+    <string name="home_introText">ระบบประเมินความพึงพอใจ
+        ที่ร้านมีต่อพนักงานส่งสินค้า</string>
+    <string name="home_connectionErrorWarning">ระบบไม่สามารถเชื่อมต่อ
+        กับอินเตอร์เน็ตได้ โปรดทำการเชื่อมต่อ
+        สัญญานอีกครั้ง</string>
+
+    <!-- First Time Verify -->
+    <string name="firstTime_headingtxt">กรุณากรอกรหัสร้านค่ะ</string>
+    <string name="firstTime_exampleKey">ตัวอย่าง: 00344 หรือ 13402</string>
+    <string name="firstTime_continue">ตกลง</string>
+
+    <!-- Second Time Verify -->
+    <string name="secondVerify_header">โปรดยืนยันความถูกต้อง
+        ของรหัสร้าน</string>
+    <string name="secondVerify_editTxt">แก้ไข</string>
+    <string name="secondVerify_confirmTxt">ยืนยัน</string>
+
+    <!-- Scanner Screen -->
+    <string name="scan_headerText">สแกนบัตรพนักงานเพื่อให้คะแนน</string>
+
+    <!-- RatingNoChoice & RatingWithChoice Screen -->
+    <string name="rating_employeeOverviewText">ความพึงพอใจที่มีต่อพนักงาน</string>
+    <string name="rating_label_plateNumber">ทะเบียนรถ</string>
+    <string name="rating_label_name">ชื่อ นามสกุล</string>
+    <string name="rating_label_supplierName">Supplier</string>
+    <string name="rating_label_happy">เยี่ยม</string>
+    <string name="rating_label_okay">เฉยๆ</string>
+    <string name="rating_label_mad">ไม่พอใจ</string>
+
+    <!-- Confirmation Screen -->
+    <string name="confirm_headerTxt">ยืนยันการส่งข้อมูล</string>
+    <string name="confirm_goBackText">แก้ไข</string>
+    <string name="confirm_submitText">ยืนยัน</string>
+    <string name="confirm_errorText">ไม่สามารถส่งข้อมูลได้ กรุณาลองอีกครั้งค่ะ</string>
+    <!-- If Happy ... -->
+    <string name="confirm_happy_ans1">ทำหน้าที่ได้ดีเยี่ยม</string>
+    <string name="confirm_happy_ans2">ตรงต่อเวลา</string>
+    <string name="confirm_happy_ans3">ทำตามกฏทุกข้อ</string>
+    <string name="confirm_happy_ans4">ไม่ขอระบ / อื่นๆ</string>
+
+    <!-- If Okay ... -->
+    <string name="confirm_okay_ans1">ทำหน้าที่ได้ต่ำกว่ามาตรฐาน</string>
+    <string name="confirm_okay_ans2">มาสายกว่ากำหนด</string>
+    <string name="confirm_okay_ans3">ผิดกฏบางข้อ</string>
+    <string name="confirm_okay_ans4">ไม่ขอระบุ / อื่นๆ</string>
+
+    <!-- If Okay ... -->
+    <string name="confirm_mad_ans1">ทำหน้าที่ได้อย่างย่ำแย่</string>
+    <string name="confirm_mad_ans2">สร้างความเสียหายให้ร้าน</string>
+    <string name="confirm_mad_ans3">จอดรถไม่ตรงพื้นที่กำหนดไว้</string>
+    <string name="confirm_mad_ans4">ไม่ขอระบ / อื่นๆุ</string>
+
+    <!-- Print Success Screen -->
+    <string name="printSuccess_successTxt">ประเมินเรียบร้อยแล้ว ขอบคุณค่ะ</string>
+    <string name="printSuccess_returnHomeTxt">ออกจากโปรแกรม</string>
+
+</resources>

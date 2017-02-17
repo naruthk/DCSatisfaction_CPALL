@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cpall.DCSatisfaction_CPALL.ScanQR"
+    android:background="#ffffff"
+    android:padding="0dp"
+    android:weightSum="1">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_margin="0dp">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgview_scan_logoPicture"
+            android:src="@mipmap/cpalllogolarge"
+            android:maxHeight="60dp"
+            android:maxWidth="100dp"
+            android:padding="0dp"
+            android:layout_margin="10dp" />
+
+        <!-- Blue rectangle -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/imgview_scan_rectangleBar"
+            android:src="#0179ca"
+            android:padding="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:maxHeight="60dp"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <!-- Logo Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/logo_text"
+            android:id="@+id/txtview_scan_logoText"
+            android:paddingLeft="10dp"
+            android:textColor="#2968ce"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="14dp" />
+
+        <!-- Header text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/scan_headerText"
+            android:id="@+id/txtview_scan_headerText"
+            android:textSize="21sp"
+            android:textIsSelectable="false"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="43dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" "
+            android:id="@+id/global_textView_storeID"
+            android:paddingLeft="10dp"
+            android:textColor="#7fb0ff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="14dp"
+            android:textIsSelectable="false" />
+
+    </FrameLayout>
+
+    <!-- Camera Screen -->
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
+

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context="cpall.DCSatisfaction_CPALL.FirstTimeVerify">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/logo"
+            android:src="@mipmap/cpalllogolarge"
+            android:maxHeight="60dp"
+            android:maxWidth="100dp"
+            android:padding="0dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/logo_text"
+            android:id="@+id/logo_word"
+            android:paddingLeft="10dp"
+            android:textColor="#2968ce"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/span_appType"
+            android:id="@+id/appLabel"
+            android:paddingLeft="10dp"
+            android:textColor="#7fb0ff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="14dp"
+            android:textIsSelectable="false" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Confirmation message -->
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="80dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/firstTime_headingtxt"
+            android:id="@+id/firstTime_headingTxt"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <!-- Continue button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:text="@string/firstTime_continue"
+            android:id="@+id/btn_firstTime_continue"
+            android:background="#f10088c7"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:onClick="onClick"
+            android:textSize="16sp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:maxLength="5"
+            android:id="@+id/firstTime_input"
+            android:layout_below="@+id/firstTime_headingTxt"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/firstTime_exampleKey"
+            android:id="@+id/textView"
+            android:textColor="#999999"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_below="@+id/firstTime_input"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
