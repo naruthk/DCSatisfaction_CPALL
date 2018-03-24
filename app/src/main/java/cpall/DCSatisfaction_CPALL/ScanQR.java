@@ -15,17 +15,15 @@ import android.hardware.Camera.PreviewCallback;
 import android.hardware.Camera.AutoFocusCallback;
 import android.hardware.Camera.Size;
 
-// Start of Z-bar QR scanner import
 import net.sourceforge.zbar.ImageScanner;
 import net.sourceforge.zbar.Image;
 import net.sourceforge.zbar.Symbol;
 import net.sourceforge.zbar.SymbolSet;
 import net.sourceforge.zbar.Config;
-// End of Z-bar QR Scanner import
 
 public class ScanQR extends Activity {
 
-    SharedManagement session;
+    public SharedManagement session;
 
     // อย่าแก้ไขส่วนของ Z-bar
     private Camera mCamera;

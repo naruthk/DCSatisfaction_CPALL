@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 public class SecondTimeVerify extends Activity {
 
-    SharedManagement session;   // ทำหน้าที่สร้าง Session ใหม่ขึ้นมาเพื่อเก็บข้อมูล
-    String storeID;             // เก็บบันทึกรหัสร้าน
+    SharedManagement session;
+    private String storeID; 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

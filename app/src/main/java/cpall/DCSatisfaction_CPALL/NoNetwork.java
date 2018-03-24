@@ -8,16 +8,14 @@ import android.view.Window;
 
 public class NoNetwork extends Activity {
 
-    @Override
+    @Override{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_no_network);
-
     }
+
     public void onClick(View v) {
-        onBackPressed();
-        //Intent backToHome = new Intent(NoNetwork.this, HomeScreen.class);
-        //startActivity(backToHome);
+      onBackPressed();}
     }
 }

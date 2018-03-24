@@ -39,7 +39,7 @@ public class ConfirmNoQuestion extends Activity {
 
     // Session Manager Class
     SharedManagement session;
-    String storeID;
+    private String storeID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

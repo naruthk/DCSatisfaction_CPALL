@@ -13,18 +13,12 @@ public class Rating extends Activity {
     SharedManagement session;
 
     TextView txtview_plateNumber, txtview_name, txtview_supplierName, storeID_top;
-    String plateNumber, name, supplierName;
+    private String plateNumber, name, supplierName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rating);
-
-        //        HashMap<String, String> user = session.getUserDetails();
-        //        String storeID = user.get(SharedManagement.KEY_STORE_ID);
-        //        storeID_top = (TextView) findViewById(R.id.global_textView_storeID);
-        //        String storeTag = "รหัสร้าน: " + storeID;
-        //        storeID_top.setText(storeTag);
 
         Bundle bundle = getIntent().getExtras();
         String information = bundle.getString("ScanResult");
@@ -43,9 +37,9 @@ public class Rating extends Activity {
         txtview_name.setText(name);
         txtview_supplierName.setText(supplierName);
 
-        ImageButton selected_happy = (ImageButton) findViewById(R.id.imgbtn_rating_happy);    // Happy face
-        ImageButton selected_okay = (ImageButton) findViewById(R.id.imgbtn_rating_okay);      // Okay face
-        ImageButton selected_mad = (ImageButton) findViewById(R.id.imgbtn_rating_mad);        // Mad face
+        ImageButton selected_happy = (ImageButton) findViewById(R.id.imgbtn_rating_happy); 
+        ImageButton selected_okay = (ImageButton) findViewById(R.id.imgbtn_rating_okay);
+        ImageButton selected_mad = (ImageButton) findViewById(R.id.imgbtn_rating_mad); 
 
         TextView happyTxt = (TextView) findViewById(R.id.txtview_label_happy);
         TextView okayTxt = (TextView) findViewById(R.id.txtview_label_okay);
@@ -106,17 +100,16 @@ public class Rating extends Activity {
         // เปลี่ยนเป็น ConfirmWithQuestions.class เมื่อโปรแกรมต้องการให้ผู้ใช้ตอบคำถามเพิ่มเติม
 
         // ถ้าพบว่าสัญญานอินเตอร์เน็ตนั้นถูกเชื่อมต่อไว้เรียบร้อยแล้ว
-        if (CheckNetwork.isInternetAvailable(Rating.this)) //returns true if internet available
-        {
-            Intent i = new Intent(Rating.this, ConfirmNoQuestion.class);
-            Bundle b = new Bundle();
-            b.putString("plateNumber", plateNumber);
-            b.putString("choice", emotionStatus);
-            i.putExtras(b);
-            startActivity(i);
+        if (CheckNetwork.isInternetAvailable(Rating.this)) {
+          Intent i = new Intent(Rating.this, ConfirmNoQuestion.class);
+          Bundle b = new Bundle();
+          b.putString("plateNumber", plateNumber);
+          b.putString("choice", emotionStatus);
+          i.putExtras(b);
+          startActivity(i);
         } else {
-            Intent openConfirmationDialogue = new Intent(Rating.this, NoNetwork.class);
-            startActivity(openConfirmationDialogue);
+          Intent openConfirmationDialogue = new Intent(Rating.this, NoNetwork.class);
+          startActivity(openConfirmationDialogue);
         }
     }
 }

@@ -23,13 +23,10 @@ public class PrintSuccess extends Activity {
                 intent.addCategory(Intent.CATEGORY_HOME);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-//            Intent openConfirmationDialogue = new Intent(PrintSuccess.this, HomeScreen.class);
-//            startActivity(openConfirmationDialogue);
             }
         });
     }
 
-    // ปิดกั้นไม่ให้ผู้ใช้กดปุ่ม Back บนมือถือได้
     @Override
     public void onBackPressed() {}
 }
